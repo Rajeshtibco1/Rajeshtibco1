@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_83669d0e-1bdf-4432-88ff-fcfa2f0e7959="http://ns.tibco.com/bw/palette/dataformat/83669d0e-1bdf-4432-88ff-fcfa2f0e7959" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_fFc-gaBrEeymwfXbphfuTg" name="jdbc.DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_5LPhwKESEeyrwYHfSl1oSg" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/83669d0e-1bdf-4432-88ff-fcfa2f0e7959"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_fFc-gqBrEeymwfXbphfuTg" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="Carriage Return/Line Feed (windows)" fillCharacter="Space" schemaElementQName="_83669d0e-1bdf-4432-88ff-fcfa2f0e7959:Customer" fieldOffsetsStr="CustID(0,0)&#xA;CustNAME(0,0)&#xA;CustADDRESS(0,0)&#xA;CustMAILID(0,0)&#xA;CustPHNO(0,0)&#xA;CustSAL(0,0)&#xA;CustSTATUS(0,0)&#xA;CustPROOF(0,0)&#xA;CustDATETIME(0,0)">
+    <fieldOffsets xmi:id="_F4CkgKETEeyrwYHfSl1oSg" name="CustID"/>
+    <fieldOffsets xmi:id="_JqeUUKETEeyrwYHfSl1oSg" name="CustNAME"/>
+    <fieldOffsets xmi:id="_M8YJ8KETEeyrwYHfSl1oSg" name="CustADDRESS"/>
+    <fieldOffsets xmi:id="_PAO4EKETEeyrwYHfSl1oSg" name="CustMAILID"/>
+    <fieldOffsets xmi:id="_SBUqgKETEeyrwYHfSl1oSg" name="CustPHNO"/>
+    <fieldOffsets xmi:id="_VXOPUKETEeyrwYHfSl1oSg" name="CustSAL"/>
+    <fieldOffsets xmi:id="_YYHNcKETEeyrwYHfSl1oSg" name="CustSTATUS"/>
+    <fieldOffsets xmi:id="_a2n3QKETEeyrwYHfSl1oSg" name="CustPROOF"/>
+    <fieldOffsets xmi:id="_iiQGMKETEeyrwYHfSl1oSg" name="CustDATETIME"/>
+  </jndi:configuration>
+</jndi:namedResource>

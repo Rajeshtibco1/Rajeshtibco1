@@ -1,0 +1,4 @@
+1647335128158	Change XSD Element name from 'primitive' to 'CustPROOF'
+1647336601522	Change XSD Element name from 'CustADDRESS' to 'CustNAME'
+1647416686615	Change XSD Element name from 'errorcode' to 'errorMSGE'
+1647416737875	Change XSD Element name from 'errormsge' to 'erroRcode'

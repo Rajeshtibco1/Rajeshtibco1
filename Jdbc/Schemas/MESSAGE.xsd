@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MESSAGE" xmlns:tns="http://www.example.org/MESSAGE" elementFormDefault="qualified">
+
+    <complexType name="MESSAGETYPE">
+    	<sequence>
+    		<element name="PRODUCT" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+
+
+
+    <element name="MESSAGE" type="tns:MESSAGETYPE"></element>
+</schema>

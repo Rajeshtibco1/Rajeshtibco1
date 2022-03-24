@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MessageS" xmlns:tns="http://www.example.org/MessageS" elementFormDefault="qualified">
+
+    <complexType name="productsType">
+    	<sequence>
+    		<element ref="tns:product" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="productType"></complexType>
+
+    <element name="products" type="tns:productsType"></element>
+
+    <element name="product" type="tns:productType"></element>
+</schema>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CUATOMER369" xmlns:tns="http://www.example.org/CUATOMER369" elementFormDefault="qualified">
+
+    <complexType name="CUSTDEAILSType">
+    	<sequence>
+    		<element ref="tns:CUST" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CUSTType">
+    	<sequence>
+    		<element ref="tns:CUSTID"></element>
+    		<element ref="tns:CUSTNAME"></element>
+    		<element ref="tns:CUSTADDRESS"></element>
+    		<element ref="tns:CUSTMAILID"></element>
+    		<element ref="tns:CUSTPHNO"></element>
+    		<element ref="tns:CUSTSAL"></element>
+    		<element ref="tns:CUSTSTATUS"></element>
+    		<element ref="tns:CUSTPROOF"></element>
+    		<element ref="tns:CUSTDATETIME"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="CUSTDETAILS" type="tns:CUSTDEAILSType"></element>
+
+    <element name="CUST" type="tns:CUSTType"></element>
+
+    <element name="CUSTID" type="integer"></element>
+
+    <element name="CUSTNAME" type="string"></element>
+
+    <element name="CUSTADDRESS" type="string"></element>
+
+    <element name="CUSTMAILID" type="string"></element>
+
+    <element name="CUSTPHNO" type="integer"></element>
+
+    <element name="CUSTSAL" type="string"></element>
+
+    <element name="CUSTSTATUS" type="string"></element>
+
+    <element name="CUSTPROOF" type="string"></element>
+
+    <element name="CUSTDATETIME" type="string"></element>
+</schema>

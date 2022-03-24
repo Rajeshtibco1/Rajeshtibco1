@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/Customerdetails" elementFormDefault="qualified" targetNamespace="http://www.example.org/Customerdetails">
+
+    <complexType name="CustomerType">
+    	<sequence>
+    		<element ref="tns:CustID"/>
+    		<element ref="tns:CustNAME"/>
+    		<element ref="tns:CustADDRESS"/>
+    		<element ref="tns:CustMAIL"/>
+    		<element ref="tns:CustPHNO"/>
+    		<element ref="tns:CustSAL"/>
+    		<element ref="tns:custSTATUS"/>
+    		<element ref="tns:CustPROOF"/>
+    		<element ref="tns:CustDATETIME"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CustomerDetailsType">
+    	<sequence>
+    		<element maxOccurs="unbounded" minOccurs="0" ref="tns:Customer"/>
+    	</sequence>
+    </complexType>
+    
+    <element name="Customerdetails" type="tns:CustomerDetailsType"/>
+
+    <element name="Customer" type="tns:CustomerType"/>
+
+    <element name="CustNAME" type="string"/>
+
+    <element name="CustADDRESS" type="string"/>
+
+    <element name="CustMAIL" type="string"/>
+
+    <element name="CustPHNO" type="integer"/>
+
+    <element name="CustSAL" type="string"/>
+
+    <element name="custSTATUS" type="string"/>
+
+    <element name="CustPROOF" type="string"/>
+
+    <element name="CustDATETIME" type="string"/>
+
+    <element name="CustID" type="integer"/>
+</schema>

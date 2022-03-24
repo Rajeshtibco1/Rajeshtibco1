@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_AV0iUJhxEeyIPIpPaFdqDg" targetNamespace="http://tns.tibco.com/bw/composite/JDBCPalette" name="JDBCPalette" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_Af-j4JhxEeyIPIpPaFdqDg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Af_K8JhxEeyIPIpPaFdqDg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Af_K8ZhxEeyIPIpPaFdqDg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Af_K8phxEeyIPIpPaFdqDg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Af_K85hxEeyIPIpPaFdqDg" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Af_K9JhxEeyIPIpPaFdqDg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Af_K9ZhxEeyIPIpPaFdqDg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AgI78JhxEeyIPIpPaFdqDg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AgI78ZhxEeyIPIpPaFdqDg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_AbE1wJhxEeyIPIpPaFdqDg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_AbE1wZhxEeyIPIpPaFdqDg" processName="jdbcpalette.CsvtoDB"/>
+  </sca:component>
+  <sca:component xmi:id="_XFjAQJnqEeyyaoQBst0www" name="ComponentMillionofRecords" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_XFjAQZnqEeyyaoQBst0www" processName="jdbcpalette.MillionofRecordscsvtodb"/>
+  </sca:component>
+  <sca:component xmi:id="_obIDYJqXEeyUYYoIUjhROQ" name="ComponentXMLtocsv" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_obIDYZqXEeyUYYoIUjhROQ" processName="jdbcpalette.XMLtocsv"/>
+  </sca:component>
+  <sca:component xmi:id="_dHv_8Jq-Eey-iPHphLXldA" name="ComponentDBtoCSV" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_dHv_8Zq-Eey-iPHphLXldA" processName="jdbcpalette.MULTIDBtoCSV"/>
+  </sca:component>
+  <sca:component xmi:id="_4utvkJr4Eey-iPHphLXldA" name="ComponentSingleRecDbToCsv" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_4utvkZr4Eey-iPHphLXldA" processName="jdbcpalette.MultipuleRECS"/>
+  </sca:component>
+  <sca:component xmi:id="_UTOY8JuzEey-iPHphLXldA" name="Component1Process" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UTOY8ZuzEey-iPHphLXldA" processName="jdbcpalette.Process"/>
+  </sca:component>
+  <sca:component xmi:id="_T1_ewJyBEey-iPHphLXldA" name="ComponentPersoneXMLDATA" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_T1_ewZyBEey-iPHphLXldA" processName="jdbcpalette.PersoneXMLDATA"/>
+  </sca:component>
+  <sca:component xmi:id="_WwfDYJ4VEey6LIYqI88R5A" name="ComponentWriteXML" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_WwfDYZ4VEey6LIYqI88R5A" processName="jdbcpalette.WriteXML"/>
+  </sca:component>
+</sca:composite>
